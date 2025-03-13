@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Admin</title>
+  <script src="/scripts/aem.js" type="module"></script>
+  <script src="/scripts/scripts.js" type="module"></script>
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <script src="/tools/slack-admin/report.js" type="module"></script>
+  <link rel="stylesheet" href="/tools/slack-admin/report.css" />
+</head>
+
+<body class="slack-admin">
+  <header></header>
+  <main>
+    <!-- TITLE -->
+    <div>
+      <h1>Manage channels</h1>
+    </div> 
+
+    <!-- SLACK FORM -->
+    <div>
+      <form>
+        <div class="form-field">
+          <label for="key">API key</label>
+          <input name="key" id="key" required />
+          <div class="field-help-text">
+            <p>Your API key</p>
+          </div>
+        </div>
+        <p class="button-wrapper">
+          <button type="click" id="view" class="button">View report</button>
+        </p>
+      </form>
+    </div>
+
+    <!-- SLACK CONTAINER -->
+    <div id="report-container">
+    </div>
+
+  </main>
+  <footer></footer>
+</body>
+
+</html>

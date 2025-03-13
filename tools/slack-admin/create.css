@@ -1,0 +1,8 @@
+@import './slack-admin.css';
+
+.slack-admin #result {
+  padding: 0 var(--horizontal-spacing);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
